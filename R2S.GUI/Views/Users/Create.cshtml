@@ -1,0 +1,127 @@
+﻿@model R2S.GUI.Models.UsersDetailsViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col s12 m12 l12">
+        <div class="card-panel">
+            <h4 class="header2">Create a new User</h4>
+            <h5 class="red-text">@ViewBag.Error</h5>
+            <div class="row">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="cin" type="number" name="cin">
+                            <label for="cin" class="">CIN</label>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <input id="firstname" type="text" name="firstname">
+                            <label for="firstname" class="">First Name</label>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <input id="lastname" type="text" name="lastname">
+                            <label for="lastname">Last Name</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="username" type="text" name="username">
+                            <label for="username">Username</label>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <input id="password" type="password" name="password">
+                            <label for="password">Password</label>
+                        </div>
+
+                        <div class="input-field col s4">
+                            <input id="email" type="email" name="email">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="date" class="datepicker" name="birthday" id="birthday">
+                            <label for="birthday">Birthday</label>
+                        </div>
+
+                        <div class="input-field col s6">
+                            <select name="gender">
+                                <option value="" disabled selected>Select a Gender</option>
+                                <option value="0">Male</option>
+                                <option value="1">Female</option>
+                            </select>
+                            <label>Gender</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h4 class="header2 col s12">Address</h4>
+
+                        <div class="input-field col s3">
+                            <input id="country" type="text" name="country">
+                            <label for="country">Country</label>
+                        </div>
+
+                        <div class="input-field col s3">
+                            <input id="city" type="text" name="city">
+                            <label for="city">City</label>
+                        </div>
+
+                        <div class="input-field col s3">
+                            <input id="state" type="text" name="state">
+                            <label for="state">State</label>
+                        </div>
+
+                        <div class="input-field col s3">
+                            <input id="street" type="text" name="street">
+                            <label for="street">Street</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="tel" type="tel" name="tel">
+                            <label for="tel">Telephone</label>
+                        </div>
+                        <div class="input-field col s4">
+                            @Html.DropDownList("referee_cin")
+                            <label for="referee_cin">Reffered By</label>
+                        </div>
+                    
+                        <div class="input-field col s4">
+                            <select name="role">
+                                <option value="" disabled selected>Select a Role</option>
+                                <option value="Employee">Employee</option>
+                                <option value="Candidate">Candidate</option>
+                                <option value="RecruitmentManager">Recruitment Manager</option>
+                            </select>
+                            <label>Role</label>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button class="btn cyan waves-effect waves-light right" type="submit" name="action">
+                                Submit
+                                <i class="mdi-content-send right"></i>
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

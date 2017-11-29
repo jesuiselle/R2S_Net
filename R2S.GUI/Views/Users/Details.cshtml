@@ -1,0 +1,120 @@
+﻿@model R2S.GUI.Models.UsersDetailsViewModel
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+<style>
+    dt {
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+</style>
+<div>
+    <h4>user</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.active)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.city)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.city)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.state)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.state)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.street)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.street)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.birthday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.birthday)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.firstname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.firstname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.lastname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.lastname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.tel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.tel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewUser.username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewUser.username)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NewUser.cin }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
