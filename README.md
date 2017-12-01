@@ -34,16 +34,16 @@ _________________________________________________________________
 
 This is some screenshots of this application
 
-![alt tag](https://raw.githubusercontent.com/jesuiselle/R2S_Net/master/screenshots/s0.png)
+![alt tag](https://raw.githubusercontent.com/jesuiselle/R2S_Net/master/Screenshots/s0.png)
 _________________________________________________________
 
-![alt tag](https://raw.githubusercontent.com/jesuiselle/R2S_Net/master/screenshots/s3.png)
+![alt tag](https://raw.githubusercontent.com/jesuiselle/R2S_Net/master/Screenshots/s3.png)
 _________________________________________________________
 
-![alt tag](https://raw.githubusercontent.com/jesuiselle/R2S_Net/master/screenshots/s2.png)
+![alt tag](https://raw.githubusercontent.com/jesuiselle/R2S_Net/master/Screenshots/s2.png)
 _________________________________________________________
 
-![alt tag](https://raw.githubusercontent.com/jesuiselle/R2S_Net/master/screenshots/s1.jpg)
+![alt tag](https://raw.githubusercontent.com/jesuiselle/R2S_Net/master/Screenshots/s1.jpg)
 _________________________________________________________
 
                                                
